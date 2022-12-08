@@ -1,0 +1,22 @@
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+    - gofmt
+    - lll
+    - revive
+linters-settings:
+  revive:
+    rules:
+      - name: duplicated-imports
+        severity: warning
+        disabled: false
